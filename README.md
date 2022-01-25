@@ -12,6 +12,8 @@ https://sqlitebrowser.org/dl/
 
 Using https://passwordsgenerator.net/sha256-hash-generator/ for hash passwords.
 
+##Python 3.9.10
+##Flask 1.1.4
 _______________________________________________________
 #You can use my postman collection file to test APIs.
 
