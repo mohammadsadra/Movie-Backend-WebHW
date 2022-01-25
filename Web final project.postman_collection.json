@@ -1,0 +1,438 @@
+{
+	"info": {
+		"_postman_id": "d074191b-5c88-43ef-bf2d-0cca68a9cb86",
+		"name": "Web final project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post movie (Admin)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzEwMzA0OCwiZXhwIjoxNjQ5MTA2MjgwfQ.Hvjg4kk6LefEsjpX2MF4d0mP6o3uRw4FRy1L_g-_rfI",
+						"description": "user token",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjQzMTAzMDQ4LCJleHAiOjE2NDkxMDYyODB9.8uSDheikn1lfG_WhtwYmEGZ6NeWvAZVXlqdPCdd-O2w",
+						"description": "admin token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Hezar pa\",\n  \"description\": \"khande dar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/movie",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit movie (Admin)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzEwMzA0OCwiZXhwIjoxNjQ5MTA2MjgwfQ.Hvjg4kk6LefEsjpX2MF4d0mP6o3uRw4FRy1L_g-_rfI",
+						"description": "user token",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjQzMTAzMDQ4LCJleHAiOjE2NDkxMDYyODB9.8uSDheikn1lfG_WhtwYmEGZ6NeWvAZVXlqdPCdd-O2w",
+						"description": "admin token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Hoshdar baraye Cobra 110\",\n  \"description\": \"Film action khafan :))))))))))))))))))))\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/movie/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"movie",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete movie (Admin)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzEwMzA0OCwiZXhwIjoxNjQ5MTA2MjgwfQ.Hvjg4kk6LefEsjpX2MF4d0mP6o3uRw4FRy1L_g-_rfI",
+						"description": "user token",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjQzMTAzMDQ4LCJleHAiOjE2NDkxMDYyODB9.8uSDheikn1lfG_WhtwYmEGZ6NeWvAZVXlqdPCdd-O2w",
+						"description": "admin token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/movie/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"movie",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Un/Approved comment (Admin)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzEwMzA0OCwiZXhwIjoxNjQ5MTA2MjgwfQ.Hvjg4kk6LefEsjpX2MF4d0mP6o3uRw4FRy1L_g-_rfI",
+						"description": "user token",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjQzMTAzMDQ4LCJleHAiOjE2NDkxMDYyODB9.8uSDheikn1lfG_WhtwYmEGZ6NeWvAZVXlqdPCdd-O2w",
+						"description": "admin token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"approved\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/comment/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"comment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete comment (Admin)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzEwMzA0OCwiZXhwIjoxNjQ5MTA2MjgwfQ.Hvjg4kk6LefEsjpX2MF4d0mP6o3uRw4FRy1L_g-_rfI",
+						"description": "user token",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjQzMTAzMDQ4LCJleHAiOjE2NDkxMDYyODB9.8uSDheikn1lfG_WhtwYmEGZ6NeWvAZVXlqdPCdd-O2w",
+						"description": "admin token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/admin/comment/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"comment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vote (User)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzEwMzA0OCwiZXhwIjoxNjQ5MTA2MjgwfQ.Hvjg4kk6LefEsjpX2MF4d0mP6o3uRw4FRy1L_g-_rfI",
+						"description": "User token",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjQzMTAzMDQ4LCJleHAiOjE2NDkxMDYyODB9.8uSDheikn1lfG_WhtwYmEGZ6NeWvAZVXlqdPCdd-O2w",
+						"description": "Admin token",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"movie_id\": 4,\n  \"vote\": 0.4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/user/vote",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comment (User)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzEwMzA0OCwiZXhwIjoxNjQ5MTA2MjgwfQ.Hvjg4kk6LefEsjpX2MF4d0mP6o3uRw4FRy1L_g-_rfI",
+						"description": "For User",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjQzMTAzMDQ4LCJleHAiOjE2NDkxMDYyODB9.8uSDheikn1lfG_WhtwYmEGZ6NeWvAZVXlqdPCdd-O2w",
+						"description": "For Admin",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"movie_id\": 3,\n  \"comment_body\": \"Kheyli tasir gozar bod\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/user/comment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get movie comments (Public)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/comments?movie=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"comments"
+					],
+					"query": [
+						{
+							"key": "movie",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get movie by id (Public)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/movie/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"movie",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all movies (Public)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/movies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

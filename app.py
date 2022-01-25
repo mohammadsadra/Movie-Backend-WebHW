@@ -244,7 +244,7 @@ def changeMovieInfo(current_user,movie_id):
     return resp
 
 @app.route('/admin/movie/<movie_id>', methods=['DELETE'])
-
+@token_required
 def deleteMovie(current_user, movie_id):
     if current_user.role != 1:
         resp = make_response(jsonify({'message': 'You dont have access'}), 400)
