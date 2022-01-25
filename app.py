@@ -10,10 +10,6 @@ import jwt
 from functools import wraps
 
 pv_key = 'NTNv7j0TuYARvmNMmWXo6fKvM4o6nv/aUi9ryX38ZH+L1bkrnD1ObOQ8JAUmHCBq7Iy7otZcyAagBLHVKvvYaIpmMuxmARQ97jUVG16Jkpkp1wXOPsrF9zwew6TpczyHkHgX5EuLg2MeBuiT/qJACs1J0apruOOJCg/gOtkjB4c='
-# adminToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjQzMTAzMDQ4LCJleHAiOjE2NDkxMDYyODB9.8uSDheikn1lfG_WhtwYmEGZ6NeWvAZVXlqdPCdd-O2w
-
-# userToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY0MzEwMzA0OCwiZXhwIjoxNjQ5MTA2MjgwfQ.Hvjg4kk6LefEsjpX2MF4d0mP6o3uRw4FRy1L_g-_rfI
-
 
 
 app = Flask(__name__)
